@@ -1,4 +1,4 @@
 class FridgeSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :url, :users, :images
+  attributes :url, :name, :users, :images
 end
