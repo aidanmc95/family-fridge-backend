@@ -19,7 +19,7 @@ class CommentsController < ApplicationController
         render json: CommentSerializer.new(comment)
     end
 
-    def delete
+    def destroy
         comment = Comment.find(params[:id])
         comment.destroy
     end

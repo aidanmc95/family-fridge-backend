@@ -3,7 +3,7 @@ class UserFridgesController < ApplicationController
         user_fridge = UserFridge.create(user_fridge_params)
     end
 
-    def delete
+    def destroy
         user_fridge = UserFridge.find(params[:id])
         user_fridge.destroy
     end
