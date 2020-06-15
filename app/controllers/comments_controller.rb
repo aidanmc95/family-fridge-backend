@@ -1,27 +1,27 @@
 class CommentsController < ApplicationController
     def index
         comments = Comment.all
-        render json: comments.to_json()
+        render json: CommentSerializer.new(comments)
     end
     
     def show
         comment = Comment.find_by(id: params[:id])
-        render json: comment.to_json()
+        render json: CommentSerializer.new(comment)
     end
 
     def create
-        user = User.create(user_params)
-        render json: user.to_json()
+        comment = Comment.create(comment_params)
+        render json: CommentSerializer.new(comment)
     end
 
     def edit
-        user = User.find(params[:id])
-        user.update(user_params)
+        comment = Comment.update(comment_params)
+        render json: CommentSerializer.new(comment)
     end
 
     def delete
-        user = User.find(params[:id])
-        user.destroy
+        comment = Comment.find(params[:id])
+        comment.destroy
     end
 
     private

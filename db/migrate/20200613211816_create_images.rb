@@ -5,6 +5,7 @@ class CreateImages < ActiveRecord::Migration[6.0]
       t.belongs_to :fridge, null: false, foreign_key: true
       t.string :image_type
       t.string :url
+      t.string :description
 
       t.timestamps
     end
