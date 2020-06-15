@@ -1,4 +1,9 @@
 class FridgesController < ApplicationController
+    # def index
+    #     fridges = Fridge.all
+    #     render json: FridgeSerializer.new(fridges)
+    # end
+    
     def show
         fridge = Fridge.find_by(id: params[:id])
         render json: FridgeSerializer.new(fridge)
