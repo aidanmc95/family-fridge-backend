@@ -22,6 +22,7 @@ class FridgesController < ApplicationController
     def destroy
         fridge = Fridge.find(params[:id])
         fridge.destroy
+        render json: {info: "Deleted"}
     end
 
     private
