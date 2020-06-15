@@ -20,8 +20,8 @@ fridge3 = Fridge.create(url: "fridge 3")
 user_fridges1 = UserFridge.create(user_id: user1, fridge_id: fridge1)
 user_fridges2 = UserFridge.create(user_id: user2, fridge_id: fridge1)
 
-image1 = Image.create(url: "image1", comment_type: "comment", user: user1, fridge: fridge1)
-image2 = Image.create(url: "image2", comment_type: "comment", user: user1, fridge: fridge1)
-image3 = Image.create(url: "image3", comment_type: "comment", user: user2, fridge: fridge1)
+image1 = Image.create(url: "image1", image_type: "comment", user: user1, fridge: fridge1)
+image2 = Image.create(url: "image2", image_type: "comment", user: user1, fridge: fridge1)
+image3 = Image.create(url: "image3", image_type: "comment", user: user2, fridge: fridge1)
 
-comment1 = Comment.create(comment: "Comment 1", user: user1, image: image1)
+comment1 = Comment.create(comment_info: "Comment 1", user: user1, image: image1)

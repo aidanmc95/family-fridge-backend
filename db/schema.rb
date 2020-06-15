@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2020_06_13_212324) do
   create_table "comments", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "image_id", null: false
-    t.string "comment"
+    t.string "comment_info"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["image_id"], name: "index_comments_on_image_id"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2020_06_13_212324) do
 
   create_table "fridges", force: :cascade do |t|
     t.string "url"
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -31,7 +32,7 @@ ActiveRecord::Schema.define(version: 2020_06_13_212324) do
   create_table "images", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "fridge_id", null: false
-    t.string "comment_type"
+    t.string "image_type"
     t.string "url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -42,6 +43,7 @@ ActiveRecord::Schema.define(version: 2020_06_13_212324) do
   create_table "user_fridges", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "fridge_id", null: false
+    t.boolean "creator"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["fridge_id"], name: "index_user_fridges_on_fridge_id"
