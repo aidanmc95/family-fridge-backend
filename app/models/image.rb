@@ -1,5 +1,5 @@
 class Image < ApplicationRecord
   belongs_to :user
   belongs_to :fridge
-  has_many :comments
+  has_many :comments, :dependent => :destroy
 end
