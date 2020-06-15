@@ -9,7 +9,6 @@ class UserFridgesController < ApplicationController
     end
 
     private
-
     def user_fridge_params
         params.require(:user_fridge).permit(:user_id, :fridge_id, :)
     end
