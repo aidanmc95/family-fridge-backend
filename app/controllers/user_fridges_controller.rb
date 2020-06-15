@@ -6,6 +6,7 @@ class UserFridgesController < ApplicationController
     def destroy
         user_fridge = UserFridge.find(params[:id])
         user_fridge.destroy
+        render json: {info: "Deleted"}
     end
 
     private
