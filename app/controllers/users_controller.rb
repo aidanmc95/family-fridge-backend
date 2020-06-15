@@ -8,4 +8,25 @@ class UsersController < ApplicationController
         user = User.find(params[:id])
         render json: UserSerializer.new(user)
     end
+
+    def create
+        user = User.create(user_params)
+        render json: user.to_json()
+    end
+
+    def edit
+        user = User.find(params[:id])
+        user.update(user_params)
+    end
+
+    def delete
+        user = User.find(params[:id])
+        user.destroy
+    end
+
+    private
+
+    def user_params
+        params.require(:user).permit(:username)
+    end
 end
