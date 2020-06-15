@@ -11,12 +11,13 @@ class UsersController < ApplicationController
 
     def create
         user = User.create(user_params)
-        render json: user.to_json()
+        render json: UserSerializer.new(user)
     end
 
     def edit
         user = User.find(params[:id])
         user.update(user_params)
+        render json: UserSerializer.new(user)
     end
 
     def delete
@@ -27,6 +28,6 @@ class UsersController < ApplicationController
     private
 
     def user_params
-        params.require(:user).permit(:username)
+        params.require(:user).permit(:username, :name)
     end
 end
