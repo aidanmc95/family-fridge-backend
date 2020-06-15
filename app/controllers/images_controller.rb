@@ -9,7 +9,7 @@ class ImagesController < ApplicationController
         render json: ImageSerializer.new(image)
     end
 
-    def delete
+    def destroy
         image = Image.find(params[:id])
         image.destroy
     end

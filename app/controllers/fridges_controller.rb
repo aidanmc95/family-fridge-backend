@@ -19,7 +19,7 @@ class FridgesController < ApplicationController
         render json: FridgeSerializer.new(fridge)
     end
 
-    def delete
+    def destroy
         fridge = Fridge.find(params[:id])
         fridge.destroy
     end
