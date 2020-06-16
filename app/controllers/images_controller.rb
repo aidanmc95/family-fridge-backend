@@ -18,6 +18,6 @@ class ImagesController < ApplicationController
     private
 
     def image_params
-        params.require(:image).permit(:user_id, :fridge_id, :url, :description, :image_type)
+        params.require(:image).permit(:user_id, :fridge_id, :url, :description, :name, :image_type)
     end
 end
