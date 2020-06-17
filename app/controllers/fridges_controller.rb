@@ -27,6 +27,6 @@ class FridgesController < ApplicationController
 
     private
     def fridge_params
-        params.require(:fridge).permit(:url, :name, user_fridge_attributes: [:user_id, :fridge_id])
+        params.require(:fridge).permit(:url, :name, user_fridges_attributes: [:user_id])
     end
 end
