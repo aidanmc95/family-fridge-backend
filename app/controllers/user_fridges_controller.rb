@@ -1,6 +1,7 @@
 class UserFridgesController < ApplicationController
     def create
         user_fridge = UserFridge.create(user_fridge_params)
+        render json: user_fridge.to_json()
     end
 
     def destroy
@@ -11,6 +12,6 @@ class UserFridgesController < ApplicationController
 
     private
     def user_fridge_params
-        params.require(:user_fridge).permit(:user_id, :fridge_id, :)
+        params.require(:user_fridge).permit(:user_id, :fridge_id)
     end
 end
