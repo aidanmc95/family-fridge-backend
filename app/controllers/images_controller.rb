@@ -5,7 +5,6 @@ class ImagesController < ApplicationController
     end
 
     def create
-        binding.pry
         image = Image.create(image_params)
         render json: ImageSerializer.new(image)
     end
