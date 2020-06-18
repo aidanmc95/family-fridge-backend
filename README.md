@@ -1,24 +1,73 @@
-# README
+# family-fridge
+JS/Rails Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+# Family Fridge - Frontend
 
-* Ruby version
+Family Fridge is an app for sharing important moments and accomplishments with those you are close with, simulating polaroids on a virtual fridge to bring back that old way of celebrating eachothers achievments from childhood. 
 
-* System dependencies
+[This](https://github.com/sap2411/family-fridge) is a link the the front-end repository.
 
-* Configuration
+## Motivation
 
-* Database creation
+We wanted to create an app that allows familys to conenct in a wholesome way, especially if familys are unable to connect in person during the pandemic, that reminds them of how they would connect in childhood.
 
-* Database initialization
+## Screenshots
+Login
 
-* How to run the test suite
+<img src="screenshots/login.png" width="800">
 
-* Services (job queues, cache servers, search engines, etc.)
+Account Page
 
-* Deployment instructions
+<img src="screenshots/account.png" width="800">
 
-* ...
+Viewing a Fridge
+
+<img src="screenshots/fridge_show.png" width="800">
+
+Commenting on a Polaroid
+
+<img src="screenshots/comment2.png" width="800">
+
+Upload an Image
+
+<img src="screenshots/img_upload.png" width="800">
+
+Create a New Fridge
+
+<img src="screenshots/new_fridge.png" width="800">
+
+
+## Technology Used
+
+- JS
+- Rails Router
+
+## Features
+
+Users Can:
+- Create an account
+- Upload images
+- Create fridges and add friends as participants
+- Post photos to fridges
+- Comment on posts
+
+## Installation
+
+clone the front-end, at the top of index.js change client-id value to your imgur client id, and run 'open index.html'
+
+clone back-end repo, run the following commands in order: bundle install, rails db:migrate, rails db:seed, rails s.
+
+## Contributing
+
+Contributions are welcome, submit a pull request!
+
+## Authors
+
+* **Steven Parsons** - [GitHub](https://github.com/sap24471)
+* **Aidan Muller-Cohn** - [GitHub](https://github.com/aidanmc95)
+
+## License
+
+This project is licensed under the [GNU GPL](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
