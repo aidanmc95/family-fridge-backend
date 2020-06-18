@@ -1,8 +1,4 @@
-# family-fridge
-JS/Rails Project
-
-
-# Family Fridge - Frontend
+# Family Fridge - Back-end
 
 Family Fridge is an app for sharing important moments and accomplishments with those you are close with, simulating polaroids on a virtual fridge to bring back that old way of celebrating eachothers achievments from childhood. 
 
