@@ -58,14 +58,15 @@ comment6 = Comment.create(comment_info: "Ashley: yeah 2020 sucks I want to just 
 comment7 = Comment.create(comment_info: "Shannon: More importantly, I'm a mom!", user: shannon, image: image11)
 comment8 = Comment.create(comment_info: "Steve: Wow and he's already taller than me!", user: steve, image: image9)
 
-justin_fridge = Fridge.create(url: "https://c.shld.net/rpx/i/s/i/spin/10109385/prod_22969766112?hei=333&wid=333&op_sharpen=1", name: "Justin's Fridge")
+justin = User.create(username: "JustinCredible", name: "Justin")
+justin_fridge = Fridge.create(url: "https://c.shld.net/rpx/i/s/i/spin/10109385/prod_22969766112?hei=333&wid=333&op_sharpen=1", name: "Justin's")
 
 user_fridges3 = UserFridge.create(user: user4, fridge: justin_fridge)
 user_fridges4 = UserFridge.create(user: amber, fridge: justin_fridge)
 user_fridges5 = UserFridge.create(user: ashley, fridge: justin_fridge)
 user_fridges6 = UserFridge.create(user: shannon, fridge: justin_fridge)
 user_fridges7 = UserFridge.create(user: steve, fridge: justin_fridge)
-user_fridges8 = UserFridge.create(user: patty, fridge: justin_fridge)
+user_fridges8 = UserFridge.create(user: justin, fridge: justin_fridge)
 
 justin_image4 = Image.create(url: "https://scontent.fsjc1-3.fna.fbcdn.net/v/t31.0-8/19575101_10155289409847293_7036117665803227762_o.jpg?_nc_cat=111&_nc_sid=174925&_nc_ohc=uZ3S1Im-L3QAX80bxA1&_nc_ht=scontent.fsjc1-3.fna&oh=a78c7d89d8ca5502bd77305ce008ea23&oe=5F1119D5", image_type: "image", user: user4, fridge: justin_fridge, name: "Handsome Devil", description: "Look At that Face")
 justin_image5 = Image.create(url: "https://scontent.fsjc1-3.fna.fbcdn.net/v/t1.0-9/11407128_10153039769772293_4136483679835436473_n.jpg?_nc_cat=101&_nc_sid=174925&_nc_ohc=0c61AWnFTG0AX8JgkWB&_nc_ht=scontent.fsjc1-3.fna&oh=d0a6de8bd3d20a5a2069b064bb3b338b&oe=5F0F84BA", image_type: "image", user: user4, fridge: justin_fridge, name: "Life", description: "Just another day in the Life")
@@ -74,6 +75,6 @@ justin_image7 = Image.create(url: "https://scontent.fsjc1-3.fna.fbcdn.net/v/t31.
 justin_image8 = Image.create(url: "https://scontent.fsjc1-3.fna.fbcdn.net/v/t1.0-9/427700_10150595186557293_1189056191_n.jpg?_nc_cat=106&_nc_sid=de6eea&_nc_ohc=N5QaxIkzkiQAX_UJ9Jr&_nc_ht=scontent.fsjc1-3.fna&oh=54c79c6f125b9f01ee8bdb5e755b230c&oe=5F10B4C0", image_type: "image", user: ashley, fridge: justin_fridge, name: "Muggin", description: "Watchout or You are Next")
 justin_image9 = Image.create(url: "https://scontent-sea1-1.xx.fbcdn.net/v/t31.0-8/23405708_10156957632687293_3373541406357689996_o.jpg?_nc_cat=105&_nc_sid=174925&_nc_ohc=oIa-RiIZ5GcAX89NscT&_nc_ht=scontent-sea1-1.xx&oh=e3d856aafce54a45aa076be040ba2ad1&oe=5F0FD0D0", image_type: "image", user: shannon, fridge: justin_fridge, name: "Tiny Man", description: "Look at this small person I found?!?!")
 justin_image10 = Image.create(url: "https://scontent-sea1-1.xx.fbcdn.net/v/t31.0-8/14114882_10154074765607293_7082549712775285692_o.jpg?_nc_cat=104&_nc_sid=19026a&_nc_ohc=d0MMrGuFUcUAX8m50kA&_nc_ht=scontent-sea1-1.xx&oh=90585ad9141161a82e5826e049e2f918&oe=5F0F9532", image_type: "image", user: steve, fridge: justin_fridge, name: "Order Up", description: "Melted Chocolate, Stumptown Coffee, Jamberry Crisp, Salted Carmel, Vanilla Bean, Vegan Raspberry Coconut")
-justin_image11 = Image.create(url: "https://scontent-sea1-1.xx.fbcdn.net/v/t31.0-8/53141_10151121697627293_936269447_o.jpg?_nc_cat=109&_nc_sid=19026a&_nc_ohc=Fa_rKaXHhUQAX8tVEL-&_nc_ht=scontent-sea1-1.xx&oh=54c2bfac2f0210e45ed6b607b500560e&oe=5F102FC6", image_type: "image", user: patty, fridge: justin_fridge, name: "Knock Knock", description: "Clown")
-justin_image12 = Image.create(url: "https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/1524795_10151918520882293_369009921_n.jpg?_nc_cat=103&_nc_sid=174925&_nc_ohc=j3CmnuWshOgAX_vt3z4&_nc_ht=scontent-sea1-1.xx&oh=e80b7ed0f735f992e646772e8df12daa&oe=5F10D6DF", image_type: "image", user: patty, fridge: justin_fridge, name: "Hi", description: "Look Up there")
-justin_image13 = Image.create(url: "https://scontent.fsjc1-3.fna.fbcdn.net/v/t1.0-9/44707092_10158214548382293_4277120929496039424_n.jpg?_nc_cat=109&_nc_sid=09cbfe&_nc_ohc=iqwR1j_s-owAX_HFXuB&_nc_ht=scontent.fsjc1-3.fna&oh=c3ecf93237e79be3e1ef2db718ffbffd&oe=5F116704", image_type: "image", user: patty, fridge: justin_fridge, name: "Serious", description: "“Okay can you try being serious?” Stevie Antoniou 📸")
+justin_image11 = Image.create(url: "https://scontent-sea1-1.xx.fbcdn.net/v/t31.0-8/53141_10151121697627293_936269447_o.jpg?_nc_cat=109&_nc_sid=19026a&_nc_ohc=Fa_rKaXHhUQAX8tVEL-&_nc_ht=scontent-sea1-1.xx&oh=54c2bfac2f0210e45ed6b607b500560e&oe=5F102FC6", image_type: "image", user: justin, fridge: justin_fridge, name: "Knock Knock", description: "Clown")
+justin_image12 = Image.create(url: "https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/1524795_10151918520882293_369009921_n.jpg?_nc_cat=103&_nc_sid=174925&_nc_ohc=j3CmnuWshOgAX_vt3z4&_nc_ht=scontent-sea1-1.xx&oh=e80b7ed0f735f992e646772e8df12daa&oe=5F10D6DF", image_type: "image", user: justin, fridge: justin_fridge, name: "Hi", description: "Look Up there")
+justin_image13 = Image.create(url: "https://scontent.fsjc1-3.fna.fbcdn.net/v/t1.0-9/44707092_10158214548382293_4277120929496039424_n.jpg?_nc_cat=109&_nc_sid=09cbfe&_nc_ohc=iqwR1j_s-owAX_HFXuB&_nc_ht=scontent.fsjc1-3.fna&oh=c3ecf93237e79be3e1ef2db718ffbffd&oe=5F116704", image_type: "image", user: justin, fridge: justin_fridge, name: "Serious", description: "“Okay can you try being serious?” Stevie Antoniou 📸")
