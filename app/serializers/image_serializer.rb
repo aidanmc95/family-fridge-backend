@@ -1,6 +1,6 @@
 class ImageSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :url, :user, :name, :fridge, :comments
+  attributes :url, :user, :name, :description, :fridge, :comments
 
   # attributes :url
   # belongs_to :user
