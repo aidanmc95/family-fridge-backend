@@ -3,4 +3,7 @@ class User < ApplicationRecord
     has_many :images, :dependent => :destroy
     has_many :user_fridges, :dependent => :destroy
     has_many :fridges, through: :user_fridges
+
+    validates :username, uniqueness: true
+    validates :username, presence: true
 end
